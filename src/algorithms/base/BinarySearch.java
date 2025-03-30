@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Random;
 
 public class BinarySearch {
-    public static int rand(int[] arr, int num) {
+    public static int rank(int[] arr, int num) {
         if (arr == null) {
             return -1;
         }
@@ -32,11 +32,11 @@ public class BinarySearch {
         int[] arr = {1, 234, 4356, 43, 2134, 1234, 1235, 456, 433, 3, 12, 79, 54, 423, 23424};
         Arrays.sort(arr);
 
-        System.out.println(rand(arr, 1));
-        System.out.println(rand(arr, 2));
-        System.out.println(rand(arr, 1456));
-        System.out.println(rand(arr, 3));
-        System.out.println(rand(arr, 23424));
+        System.out.println(rank(arr, 1));
+        System.out.println(rank(arr, 2));
+        System.out.println(rank(arr, 1456));
+        System.out.println(rank(arr, 3));
+        System.out.println(rank(arr, 23424));
 
 
     }
