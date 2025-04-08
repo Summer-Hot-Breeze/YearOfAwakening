@@ -1,11 +1,11 @@
-package algorithms.base;
+package algorithms.base.book;
 
 public class WeightQuickUnionUnionFind {
     //这里是将什么进行了抽象？触点、连通分量、连接
     private int count;
     private int[] id;
 
-    //给每棵树的高度定义了变量
+    //各个跟节点所所对应的分量的大小
     private int[] sz;
 
     public WeightQuickUnionUnionFind(int count) {

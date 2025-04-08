@@ -1,4 +1,4 @@
-package algorithms.base;
+package algorithms.base.book;
 
 import java.util.Arrays;
 import java.util.Random;
