@@ -1,4 +1,4 @@
-package algorithms.base.leetcode;
+package algorithms.base.book.one.leetcode;
 
 import java.util.HashSet;
 

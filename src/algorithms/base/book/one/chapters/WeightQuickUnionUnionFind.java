@@ -1,4 +1,4 @@
-package algorithms.base.book;
+package algorithms.base.book.one.chapters;
 
 public class WeightQuickUnionUnionFind {
     //这里是将什么进行了抽象？触点、连通分量、连接

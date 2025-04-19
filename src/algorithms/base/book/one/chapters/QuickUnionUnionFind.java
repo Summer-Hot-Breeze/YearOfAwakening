@@ -1,11 +1,11 @@
-package algorithms.base.book;
+package algorithms.base.book.one.chapters;
 
-public class QuickFindUnionFind {
+public class QuickUnionUnionFind {
     //这里是将什么进行了抽象？触点、连通分量、连接
     private int count;
     private int[] id;
 
-    public QuickFindUnionFind(int count) {
+    public QuickUnionUnionFind(int count) {
         this.count = count;
         id = new int[count];
         for (int i = 0; i < count; i++) {
@@ -22,22 +22,22 @@ public class QuickFindUnionFind {
     }
 
     public int find(int p) {
-        //这里返回的代表什么意思
-        return id[p];
+        //这里的id[p]代表什么意思
+        while (id[p] != p) {
+            p = id[p];
+        }
+        //这里返回的p是什么
+        return p;
     }
 
     public void union(int p, int q) {
-        int pId=id[p];
-        int qId=id[q];
-        if(pId==qId){
+        int pId = find(p);
+        int qId = find(q);
+        if (pId == qId) {
             return;
         }
-        for (int i = 0; i < id.length; i++) {
-            if(id[i]==pId){
-                id[i]=qId;
-            }
-        }
-        //这里的count为什么要放在外面进行--
+        //这里为什么是id[pid]而不是id[p]
+        id[pId] = qId;
         count--;
     }
 }
